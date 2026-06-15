@@ -1,0 +1,226 @@
+/* Interactive enhancements for Heavenly Bites Bakery */
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+button:focus-visible {
+  transform: translateY(-1px);
+  background: var(--secondary);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.accordion {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.accordion .accordion-header {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.accordion .accordion-header::after {
+  content: '+';
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion .accordion-item.open .accordion-header::after {
+  transform: rotate(45deg);
+}
+
+.accordion .accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 1.25rem;
+}
+
+.accordion .accordion-panel p {
+  margin: 1rem 0;
+}
+
+.tabs {
+  margin: 1.5rem 0;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.75rem 1rem;
+}
+
+.tab-buttons button.active {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.tab-panel {
+  display: none;
+  padding: 1rem 0;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content,
+.lightbox-box {
+  width: min(660px, 100%);
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .close,
+.lightbox-box .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.lightbox-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.lightbox-box .caption {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+#map {
+  width: 100%;
+  min-height: 360px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.location-panel {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+}
+
+.location-panel .location-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.location-card {
+  padding: 1rem;
+  background: #fbf5ef;
+  border-radius: 12px;
+  border: 1px solid rgba(139, 69, 19, 0.12);
+}
+
+.location-card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.location-card p {
+  margin: 0.2rem 0;
+}
+
+.location-card .muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.gallery-grid img {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-grid img:hover,
+.gallery-grid img:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .tab-buttons {
+    flex-direction: column;
+  }
+}
