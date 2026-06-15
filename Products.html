@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Products — Artisan Breads, Cakes & Pastries | Heavenly Bites Bakery</title>
+    <meta name="description" content="Browse Heavenly Bites Bakery products: artisan breads, custom cakes, flaky pastries, and cookie packs. Order for pickup or catering in Braamfontein." />
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/interactive.css">
+ </head>
+    <body>
+    <header>
+        <h1>Heavenly Bites Bakery</h1>
+        <p>Freshly baked goods with love</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="location-panel" style="margin-bottom:1rem; display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+                <input id="product-search" type="search" placeholder="Search products, e.g. bread, cake" style="flex:1; padding:0.6rem; border-radius:8px; border:1px solid rgba(0,0,0,0.08);">
+                <select id="product-sort" style="padding:0.6rem; border-radius:8px; border:1px solid rgba(0,0,0,0.08);">
+                    <option value="relevance">Sort: Relevance</option>
+                    <option value="price-asc">Price: Low → High</option>
+                    <option value="price-desc">Price: High → Low</option>
+                    <option value="name-asc">Name: A → Z</option>
+                </select>
+            </div>
+            <div class="tabs reveal-on-scroll">
+                <div class="tab-buttons">
+                    <button class="active" data-target="breads-panel">Breads</button>
+                    <button data-target="cakes-panel">Cakes</button>
+                    <button data-target="pastries-panel">Pastries</button>
+                </div>
+                <div id="breads-panel" class="tab-panel active">
+                    <p>Discover artisan breads baked fresh daily: sourdough, baguettes, and focaccia with house-made starters.</p>
+                </div>
+                <div id="cakes-panel" class="tab-panel">
+                    <p>Enjoy custom celebration cakes, layered mousse cakes, and seasonal specials made to order.</p>
+                </div>
+                <div id="pastries-panel" class="tab-panel">
+                    <p>Choose from buttery croissants, muffins, danishes, and flaky treats created with premium ingredients.</p>
+                </div>
+            </div>
+            <div class="accordion reveal-on-scroll">
+                <div class="accordion-item">
+                    <div class="accordion-header">Artisan Bread Details</div>
+                    <div class="accordion-panel"><p>Our artisan breads are hand-shaped and fermented slowly for deep flavor, with signature crusts and tender crumb.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Cake Options</div>
+                    <div class="accordion-panel"><p>Choose from chocolate, vanilla, red velvet, and custom flavor combinations, plus dietary-friendly selections.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Pastry Favorites</div>
+                    <div class="accordion-panel"><p>From cinnamon swirls to fruit danishes, our pastries are baked fresh every morning for the perfect treat.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Cookie Collection</div>
+                    <div class="accordion-panel"><p>Enjoy chewy chocolate chip, oatmeal raisin, and specialty cookie packs for home or gifting.</p></div>
+                </div>
+            </div>
+            <button data-modal-target="order-modal">See Today’s Sweet Offer</button>
+        </section>
+    </main>
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">×</button>
+            <h2>Today’s Sweet Offer</h2>
+            <p>Order any pastry box today and receive a complimentary coffee voucher for your next visit.</p>
+        </div>
+    </div>
+   <footer>
+        <p>&copy; St10476520 Heavenly Bites Bakery</p>
+    </footer>
+    <script src="Java/site.js" defer></script>
+    </body>
+</html>

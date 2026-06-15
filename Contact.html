@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Contact — Visit Heavenly Bites Bakery | Braamfontein</title>
+    <meta name="description" content="Contact Heavenly Bites Bakery for orders, custom cakes, catering, and location details. Call or email to place an order or ask about our menu." />
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Heavenly Bites Bakery</h1>
+        <p>Freshly baked goods with love</p>
+    </header>
+    <nav>
+        <ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with questions, orders, or catering requests.</p>
+            <p><strong>Phone:</strong> <a href="tel:+27817487779">+27 81 748 7779</a></p>
+            <p><strong>Email:</strong> <a href="mailto:heavenlyBites47@gmail.com">heavenlyBites47@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/heavenlybites47/" target="_blank">@heavenlybites47</a></p>
+            <p><strong>Address:</strong> 23 Jorissen Street, Braamfontein — <a href="Home.html#location">See on map</a></p>
+            <p>Prefer a quick message? Use our <a href="Contact.html#contact">contact section</a> or call to place an order.</p>
+        </section>
+    </main>
+    <main>
+        <section id="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="mailto:heavenlyBites47@gmail.com" method="post" novalidate>
+                <div class="form-row">
+                    <label for="contact-name">Full name</label>
+                    <input type="text" id="contact-name" name="name" required minlength="2" placeholder="Your full name">
+                </div>
+                <div class="form-row">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="contact-phone">Phone</label>
+                    <input type="tel" id="contact-phone" name="phone" pattern="^\+?[0-9\s-]{7,20}$" placeholder="Optional: +27 81 234 5678">
+                </div>
+                <div class="form-row">
+                    <label for="contact-type">Message type</label>
+                    <select id="contact-type" name="type" required>
+                        <option value="general">General enquiry</option>
+                        <option value="order">Order / Catering</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required minlength="10" placeholder="Write your message here"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Send message</button>
+                    <button type="button" id="contact-reset">Reset</button>
+                </div>
+                <div id="contact-form-errors" class="form-errors" aria-live="polite"></div>
+                <div id="contact-form-success" class="form-success" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; St10476520 Heavenly Bites Bakery</p>
+    </footer>
+    <script src="Java/site.js"></script>
+</body>
+</html>

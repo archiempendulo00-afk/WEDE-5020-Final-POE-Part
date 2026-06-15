@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry — Heavenly Bites Bakery</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <meta name="description" content="Enquire about products, services, volunteering or sponsorship at Heavenly Bites Bakery." />
+</head>
+<body>
+    <header>
+        <h1>Enquiry</h1>
+        <p>Tell us what you'd like to know and we'll get back to you.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="enquiry-section">
+            <h2>Make an Enquiry</h2>
+            <form id="enquiry-form" action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label for="enq-name">Full name</label>
+                    <input type="text" id="enq-name" name="name" required minlength="2">
+                </div>
+                <div class="form-row">
+                    <label for="enq-email">Email</label>
+                    <input type="email" id="enq-email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="enq-phone">Phone</label>
+                    <input type="tel" id="enq-phone" name="phone" pattern="^\+?[0-9\s-]{7,20}$">
+                </div>
+                <div class="form-row">
+                    <label for="enq-type">Enquiry Type</label>
+                    <select id="enq-type" name="enquiryType" required>
+                        <option value="product">Product cost / availability</option>
+                        <option value="service">Service / Catering</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="sponsor">Sponsor</option>
+                    </select>
+                </div>
+                <div class="form-row" id="product-row">
+                    <label for="enq-product">Product (for cost estimate)</label>
+                    <select id="enq-product" name="product">
+                        <option value="">— select product —</option>
+                    </select>
+                </div>
+                <div class="form-row" id="quantity-row">
+                    <label for="enq-quantity">Quantity</label>
+                    <input type="number" id="enq-quantity" name="quantity" min="1" max="100" value="1">
+                </div>
+                <div class="form-row">
+                    <label for="enq-date">Preferred date</label>
+                    <input type="date" id="enq-date" name="date">
+                </div>
+                <div class="form-row">
+                    <label for="enq-message">Additional details</label>
+                    <textarea id="enq-message" name="message" rows="5" minlength="5"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Get estimate</button>
+                    <button type="button" id="enq-reset">Reset</button>
+                </div>
+                <div id="enquiry-errors" class="form-errors" aria-live="polite"></div>
+                <div id="enquiry-result" class="form-success" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Heavenly Bites Bakery</p>
+    </footer>
+    <script src="Java/site.js"></script>
+</body>
+</html>

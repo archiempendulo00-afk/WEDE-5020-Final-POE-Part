@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Gallery — Cakes, Pastries & Breads | Heavenly Bites Bakery</title>
+    <meta name="description" content="Gallery of Heavenly Bites Bakery — browse photos of our artisan bread, cakes, pastries and seasonal creations." />
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/interactive.css">
+</head>
+<body>
+    <header>
+        <h1>Heavenly Bites Bakery</h1>
+        <p>Freshly baked goods with love</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Gallery">
+            <h2>Gallery</h2>
+                        <div class="gallery-grid">
+                                <figure>
+                                    <img src="Images/1600px_COLOURBOX25845176.jpg" alt="Loaves of freshly baked artisan bread" data-caption="Freshly baked bread" loading="lazy">
+                                </figure>
+                                <figure>
+                                    <img src="Images/pexels-bigparadox-57041068-20558713.jpg" alt="Assorted sweet pastries with glazing" data-caption="Sweet pastries" loading="lazy">
+                                </figure>
+                                <figure>
+                                    <img src="Images/wp7367665.jpg" alt="Decorated celebration cakes" data-caption="Cakes and desserts" loading="lazy">
+                                </figure>
+                                <figure>
+                                    <img src="Images/wp9671143.jpg" alt="Assorted cookies and bite-sized treats" data-caption="Cookies and treats" loading="lazy">
+                                </figure>
+                        </div>
+            <div class="tabs reveal-on-scroll">
+                <div class="tab-buttons">
+                    <button class="active" data-target="gallery-info">Gallery Info</button>
+                    <button data-target="gallery-tips">Photo Tips</button>
+                </div>
+                <div id="gallery-info" class="tab-panel active">
+                    <p>Browse our bakery gallery to see the variety of breads, cakes, and pastries we create every day.</p>
+                </div>
+                <div id="gallery-tips" class="tab-panel">
+                    <p>Tap any photo to view it in a larger lightbox and explore details up close.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+   <footer>
+        <p>&copy; St10476520 Heavenly Bites Bakery</p>
+    </footer>
+    <script src="Java/site.js" defer></script>
+</body>
+</html>
