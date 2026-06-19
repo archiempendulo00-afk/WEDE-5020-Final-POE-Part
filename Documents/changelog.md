@@ -2,7 +2,7 @@ ChangeLog
 
 What's New?
 
-This part 3 has a new file called site.js. Site.js is a lightweight, zero-configuration local development tool and deployment server used to build, test, and host secure static and dynamic websites. It automatically manages SSL/TLS certificates via Let's Encrypt to ensure your local environment runs on secure HTTPS by default.
+This part 3 has a new file called site.js. Site.js is a lightweight, zero-configuration local development tool and deployment server used to build, test, and host secure static and dynamic websites. It automatically manages SSL/TLS certificates via Let's Encrypt to ensure your local environment runs on secure HTTPS by default.(changelog, 2025)
 
 What's changed?
 
