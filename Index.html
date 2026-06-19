@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Heavenly Bites Bakery — Artisan Breads, Cakes & Pastries | Braamfontein</title>
+    <meta name="description" content="Heavenly Bites Bakery in Braamfontein offers artisan breads, custom cakes, and freshly baked pastries made daily. Visit us for seasonal specials and catering." />
+    <meta name="keywords" content="bakery, artisan bread, cakes, pastries, Braamfontein, Heavenly Bites" />
+    <link rel="canonical" href="Home.html" />
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/interactive.css">
+</head>
+<body>
+        <header>
+            <h1>Heavenly Bites Bakery</h1>
+            <p>Freshly baked goods with love</p>
+        </header>
+        <nav>
+           <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Enquiry.html">Enquiry</a></li>
+        </ul>
+        </nav>
+        <main>
+            <section id="home">
+                <h2>Welcome to Heavenly Bites Bakery</h2>
+                <p>Indulge in our delicious selection of breads, cakes, pastries, and more. Made with the finest ingredients for that heavenly taste. Explore our <a href="Products.html">Products</a> or view the <a href="Gallery.html">Gallery</a>.</p>
+                <img src="Images/assortment-desserts-pastries-breads-cookies-delight_961875-11501.avif" alt="Assortment of breads, cakes and pastries from Heavenly Bites Bakery" loading="lazy" />
+            </section>
+
+            <section class="reveal-on-scroll">
+                <h2>Experience Our Bakery</h2>
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="active" data-target="tab-story">Our Story</button>
+                        <button data-target="tab-menu">Menu</button>
+                        <button data-target="tab-special">Specials</button>
+                    </div>
+                    <div id="tab-story" class="tab-panel active">
+                        <p>Founded in Braamfontein in 2026, our bakery brings traditional recipes and fresh creativity to every treat.</p>
+                    </div>
+                    <div id="tab-menu" class="tab-panel">
+                        <p>From artisan bread and pastries to custom cakes, our menu is baked fresh every day.</p>
+                    </div>
+                    <div id="tab-special" class="tab-panel">
+                        <p>Check today’s special offer and seasonal favorite.</p>
+                        <button data-modal-target="special-modal">View Today’s Special</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="location" class="reveal-on-scroll">
+                <h2>Find Us</h2>
+                <p>See our bakery on the interactive map and locate nearby favorites.</p>
+                <div class="location-panel">
+                    <button id="locate-btn">Find My Location</button>
+                    <div id="map"></div>
+                    <div id="nearby-list" class="location-list"></div>
+                </div>
+            </section>
+        </main>
+    <div id="special-modal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">×</button>
+            <h2>Today’s Special</h2>
+            <p>Enjoy our signature cinnamon swirl rolls with a free cup of coffee for orders placed today.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; St10476520 Heavenly Bites Bakery</p>
+    </footer>
+    <script src="Java/site.js" defer></script>
+</body>
+</html>
+
